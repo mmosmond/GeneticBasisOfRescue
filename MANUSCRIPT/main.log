@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  9 JUL 2019 16:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  11 JUL 2019 11:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1691,14 +1691,6 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 
 
 ]
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 82.
-
-
-Package natbib Warning: Citation `williams2019drug' on page 2 undefined on inpu
-t line 82.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <9> not available
@@ -1721,6 +1713,8 @@ File: ../IMAGES/VshapeMutations.pdf Graphic file (type pdf)
 <use ../IMAGES/VshapeMutations.pdf>
 Package pdftex.def Info: ../IMAGES/VshapeMutations.pdf used on input line 205.
 (pdftex.def)             Requested size: 250.14749pt x 157.39647pt.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 214.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1772,7 +1766,7 @@ Overfull \hbox (1.47453pt too wide) in paragraph at lines 299--344
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5] <../IMAGES/4stepNormalU_sims.pdf, id=342, 260.17201pt x 161.96309pt>
+[5] <../IMAGES/4stepNormalU_sims.pdf, id=343, 260.17201pt x 161.96309pt>
 File: ../IMAGES/4stepNormalU_sims.pdf Graphic file (type pdf)
 
 <use ../IMAGES/4stepNormalU_sims.pdf>
@@ -1780,7 +1774,7 @@ Package pdftex.def Info: ../IMAGES/4stepNormalU_sims.pdf used on input line 410
 .
 (pdftex.def)             Requested size: 250.14749pt x 155.72993pt.
  [6 <../IMAGES/4stepNormalU_sims.pdf>]
-<../IMAGES/fgmer_diagrams_code.pdf, id=394, 2388.89388pt x 3380.75645pt>
+<../IMAGES/fgmer_diagrams_code.pdf, id=395, 2388.89388pt x 3380.75645pt>
 File: ../IMAGES/fgmer_diagrams_code.pdf Graphic file (type pdf)
 
 <use ../IMAGES/fgmer_diagrams_code.pdf>
@@ -1794,7 +1788,7 @@ l res-cue[]
  []
 
 [7 <../IMAGES/fgmer_diagrams_code.pdf>]
-<../IMAGES/p2RelContrGrowth.pdf, id=448, 260.17201pt x 170.71178pt>
+<../IMAGES/p2RelContrGrowth.pdf, id=449, 260.17201pt x 170.71178pt>
 File: ../IMAGES/p2RelContrGrowth.pdf Graphic file (type pdf)
 
 <use ../IMAGES/p2RelContrGrowth.pdf>
@@ -1802,7 +1796,7 @@ Package pdftex.def Info: ../IMAGES/p2RelContrGrowth.pdf used on input line 553.
 
 (pdftex.def)             Requested size: 250.14749pt x 164.1419pt.
 
-<../IMAGES/p2RelContrMutationSlow.pdf, id=449, 361.35pt x 240.03477pt>
+<../IMAGES/p2RelContrMutationSlow.pdf, id=450, 361.35pt x 240.03477pt>
 File: ../IMAGES/p2RelContrMutationSlow.pdf Graphic file (type pdf)
 
 <use ../IMAGES/p2RelContrMutationSlow.pdf>
@@ -1810,7 +1804,7 @@ Package pdftex.def Info: ../IMAGES/p2RelContrMutationSlow.pdf used on input lin
 e 554.
 (pdftex.def)             Requested size: 250.14749pt x 166.16623pt.
  [8 <../IMAGES/p2RelContrGrowth.pdf> <../IMAGES/p2RelContrMutationSlow.pdf>]
-<../IMAGES/2step_m2_smallm0_sims.pdf, id=508, 260.17201pt x 166.21198pt>
+<../IMAGES/2step_m2_smallm0_sims.pdf, id=509, 260.17201pt x 166.21198pt>
 File: ../IMAGES/2step_m2_smallm0_sims.pdf Graphic file (type pdf)
 
 <use ../IMAGES/2step_m2_smallm0_sims.pdf>
@@ -1818,7 +1812,7 @@ Package pdftex.def Info: ../IMAGES/2step_m2_smallm0_sims.pdf used on input line
  614.
 (pdftex.def)             Requested size: 250.14749pt x 159.81529pt.
 
-<../IMAGES/2step_m2_medm0_sims.pdf, id=509, 361.35pt x 230.53929pt>
+<../IMAGES/2step_m2_medm0_sims.pdf, id=510, 361.35pt x 230.53929pt>
 File: ../IMAGES/2step_m2_medm0_sims.pdf Graphic file (type pdf)
 
 <use ../IMAGES/2step_m2_medm0_sims.pdf>
@@ -1826,7 +1820,7 @@ Package pdftex.def Info: ../IMAGES/2step_m2_medm0_sims.pdf used on input line 6
 15.
 (pdftex.def)             Requested size: 250.14749pt x 159.5929pt.
 
-<../IMAGES/2step_m2_largem0_sims.pdf, id=510, 361.35pt x 248.60678pt>
+<../IMAGES/2step_m2_largem0_sims.pdf, id=511, 361.35pt x 248.60678pt>
 File: ../IMAGES/2step_m2_largem0_sims.pdf Graphic file (type pdf)
 
 <use ../IMAGES/2step_m2_largem0_sims.pdf>
@@ -1837,7 +1831,7 @@ Package pdftex.def Info: ../IMAGES/2step_m2_largem0_sims.pdf used on input line
 
 LaTeX Warning: Float too large for page by 13.63841pt on input line 627.
 
-<../IMAGES/firststep_smallm0_regimes.pdf, id=524, 260.17201pt x 169.166pt>
+<../IMAGES/firststep_smallm0_regimes.pdf, id=525, 260.17201pt x 169.166pt>
 File: ../IMAGES/firststep_smallm0_regimes.pdf Graphic file (type pdf)
 
 <use ../IMAGES/firststep_smallm0_regimes.pdf>
@@ -1845,7 +1839,7 @@ Package pdftex.def Info: ../IMAGES/firststep_smallm0_regimes.pdf used on input
 line 651.
 (pdftex.def)             Requested size: 250.14749pt x 162.65562pt.
 
-<../IMAGES/firststep_medm0_regimes.pdf, id=525, 361.35pt x 234.6366pt>
+<../IMAGES/firststep_medm0_regimes.pdf, id=526, 361.35pt x 234.6366pt>
 File: ../IMAGES/firststep_medm0_regimes.pdf Graphic file (type pdf)
 
 <use ../IMAGES/firststep_medm0_regimes.pdf>
@@ -1853,7 +1847,7 @@ Package pdftex.def Info: ../IMAGES/firststep_medm0_regimes.pdf used on input li
 ne 652.
 (pdftex.def)             Requested size: 250.14749pt x 162.42929pt.
 
-<../IMAGES/firststep_largem0_regimes.pdf, id=526, 361.35pt x 252.7041pt>
+<../IMAGES/firststep_largem0_regimes.pdf, id=527, 361.35pt x 252.7041pt>
 File: ../IMAGES/firststep_largem0_regimes.pdf Graphic file (type pdf)
 
 <use ../IMAGES/firststep_largem0_regimes.pdf>
@@ -1864,15 +1858,6 @@ line 653.
 ../IMAGES/2step_m2_largem0_sims.pdf>] [10 <../IMAGES/firststep_smallm0_regimes.
 pdf> <../IMAGES/firststep_medm0_regimes.pdf> <../IMAGES/firststep_largem0_regim
 es.pdf>]
-
-Package natbib Warning: Citation `luria1943mutations' on page 11 undefined on i
-nput line 709.
-
-
-Package natbib Warning: Citation `orr2001haldane' on page 11 undefined on input
- line 712.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1893,28 +1878,28 @@ t/9 n\OT1/zplm/m/n/9 (\OML/zplm/m/it/9 t\OT1/zplm/m/n/9 ) \OML/zplm/m/it/9 > \O
 T1/ppl/m/n/9 0\OT1/zplm/m/n/9 ) \OMS/zplm/m/n/9 ^^Y []
  []
 
-<../IMAGES/4step_lowm0.pdf, id=761, 260.17201pt x 166.56429pt>
+<../IMAGES/4step_lowm0.pdf, id=769, 260.17201pt x 166.56429pt>
 File: ../IMAGES/4step_lowm0.pdf Graphic file (type pdf)
 
 <use ../IMAGES/4step_lowm0.pdf>
 Package pdftex.def Info: ../IMAGES/4step_lowm0.pdf used on input line 826.
 (pdftex.def)             Requested size: 250.14749pt x 160.15402pt.
 
-<../IMAGES/4step_medm0.pdf, id=762, 361.35pt x 230.89964pt>
+<../IMAGES/4step_medm0.pdf, id=770, 361.35pt x 230.89964pt>
 File: ../IMAGES/4step_medm0.pdf Graphic file (type pdf)
 
 <use ../IMAGES/4step_medm0.pdf>
 Package pdftex.def Info: ../IMAGES/4step_medm0.pdf used on input line 827.
 (pdftex.def)             Requested size: 250.14749pt x 159.84235pt.
 
-<../IMAGES/4step_highm0.pdf, id=763, 361.35pt x 232.14429pt>
+<../IMAGES/4step_highm0.pdf, id=771, 361.35pt x 232.14429pt>
 File: ../IMAGES/4step_highm0.pdf Graphic file (type pdf)
 
 <use ../IMAGES/4step_highm0.pdf>
 Package pdftex.def Info: ../IMAGES/4step_highm0.pdf used on input line 828.
 (pdftex.def)             Requested size: 250.14749pt x 160.70396pt.
 
-<../IMAGES/firststep_smallU.pdf, id=765, 260.17201pt x 165.74321pt>
+<../IMAGES/firststep_smallU.pdf, id=773, 260.17201pt x 165.74321pt>
 File: ../IMAGES/firststep_smallU.pdf Graphic file (type pdf)
 
 <use ../IMAGES/firststep_smallU.pdf>
@@ -1922,25 +1907,21 @@ Package pdftex.def Info: ../IMAGES/firststep_smallU.pdf used on input line 841.
 
 (pdftex.def)             Requested size: 250.14749pt x 159.36455pt.
 
-<../IMAGES/firststep_medU.pdf, id=766, 361.35pt x 229.87581pt>
+<../IMAGES/firststep_medU.pdf, id=774, 361.35pt x 229.87581pt>
 File: ../IMAGES/firststep_medU.pdf Graphic file (type pdf)
 
 <use ../IMAGES/firststep_medU.pdf>
 Package pdftex.def Info: ../IMAGES/firststep_medU.pdf used on input line 842.
 (pdftex.def)             Requested size: 250.14749pt x 159.1336pt.
 
-<../IMAGES/firststep_largeU.pdf, id=767, 361.35pt x 247.94331pt>
+<../IMAGES/firststep_largeU.pdf, id=775, 361.35pt x 247.94331pt>
 File: ../IMAGES/firststep_largeU.pdf Graphic file (type pdf)
 
 <use ../IMAGES/firststep_largeU.pdf>
 Package pdftex.def Info: ../IMAGES/firststep_largeU.pdf used on input line 843.
 
 (pdftex.def)             Requested size: 250.14749pt x 171.64098pt.
-
-
-Package natbib Warning: There were undefined citations.
-
-
+ 
 AED: lastpage setting LastPage
 [14 <../IMAGES/4step_lowm0.pdf> <../IMAGES/4step_medm0.pdf> <../IMAGES/4step_hi
 ghm0.pdf>] [15
@@ -1954,13 +1935,17 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 853.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 853.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 853.
  ) 
 Here is how much of TeX's memory you used:
- 25201 strings out of 492995
- 442570 string characters out of 6132704
- 587405 words of memory out of 5000000
- 27727 multiletter control sequences out of 15000+600000
+ 25206 strings out of 492995
+ 442734 string characters out of 6132704
+ 587323 words of memory out of 5000000
+ 27730 multiletter control sequences out of 15000+600000
  96683 words of font info for 357 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,15n,94p,1339b,530s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1984,10 +1969,10 @@ fb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></u
 sr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/loca
 l/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texli
 ve/2017/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (15 pages, 1142560 bytes).
+Output written on main.pdf (15 pages, 1142913 bytes).
 PDF statistics:
- 969 PDF objects out of 1000 (max. 8388607)
- 884 compressed objects within 9 object streams
- 111 named destinations out of 1000 (max. 500000)
+ 979 PDF objects out of 1000 (max. 8388607)
+ 894 compressed objects within 9 object streams
+ 113 named destinations out of 1000 (max. 500000)
  61047 words of extra memory for PDF output out of 61914 (max. 10000000)
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{62}
+\begin{thebibliography}{64}
 
 \bibitem[{Abramowitz {\rm and} Stegun}(1972)]{Abramowitz1972}
 {Abramowitz, M. {\rm and} I.~A. Stegun}, editors, 1972 {\em Handbook of
@@ -29,7 +29,7 @@
   and} Martin}]{anciaux2019population}
 {Anciaux, Y., A.~Lambert, O.~Ronce, L.~Roques, {\rm and} G.~Martin}, 2019
   Population persistence under high mutation rate: from evolutionary rescue to
-  lethal mutagenesis. BioRxiv p. 521203.
+  lethal mutagenesis. Evolution .
 
 \bibitem[{Antia {\em et~al.\/}}(2003){Antia, Regoes, Koella, {\rm and}
   Bergstrom}]{Antia2003}
@@ -86,12 +86,6 @@
 \bibitem[{Fisher}(1930)]{Fisher1930}
 {Fisher, R.~A.}, 1930 {\em {The genetical theory of natural selection}\/}.
   Clarendon Press, London.
-
-\bibitem[{Foll {\em et~al.\/}}(2014){Foll, Poh, Renzette, Ferrer-Admetlla,
-  Bank, Shim, Malaspinas, Ewing, Liu, Wegmann, {\em et~al.\/}}]{Foll2014}
-{Foll, M., Y.-P. Poh, N.~Renzette, A.~Ferrer-Admetlla, C.~Bank, {\em
-  et~al.\/}}, 2014 Influenza virus drug resistance: a time-sampled population
-  genetics perspective. PLoS Genetics {\bf 10}: e1004185.
 
 \bibitem[{Gerstein {\em et~al.\/}}(2012){Gerstein, Lo, {\rm and}
   Otto}]{Gerstein2012}
@@ -168,6 +162,10 @@
   rescue from extinction is contingent on a lower rate of environmental
   change}. Nature {\bf 494}: 463--467.
 
+\bibitem[{Luria {\rm and} Delbr{\"u}ck}(1943)]{luria1943mutations}
+{Luria, S.~E. {\rm and} M.~Delbr{\"u}ck}, 1943 Mutations of bacteria from virus
+  sensitivity to virus resistance. Genetics {\bf 28}: 491.
+
 \bibitem[{MacLean {\rm and} Buckling}(2009)]{MacLean2009}
 {MacLean, R.~C. {\rm and} A.~Buckling}, 2009 {The distribution of fitness
   effects of beneficial mutations in \textit{Pseudomonas aeruginosa}}. PLoS
@@ -224,6 +222,10 @@
 \bibitem[{Orr}(2005)]{Orr2005}
 {Orr, H.~A.}, 2005 {The genetic theory of adaptation: a brief history}. Nature
   Reviews Genetics {\bf 6}: 119--27.
+
+\bibitem[{Orr {\rm and} Betancourt}(2001)]{orr2001haldane}
+{Orr, H.~A. {\rm and} A.~J. Betancourt}, 2001 Haldane's sieve and adaptation
+  from the standing genetic variation. Genetics {\bf 157}: 875--884.
 
 \bibitem[{Orr {\rm and} Unckless}(2014)]{Orr2014}
 {Orr, H.~A. {\rm and} R.~L. Unckless}, 2014 {The population genetics of
@@ -317,6 +319,11 @@
 {Weissman, D.~B., M.~W. Feldman, {\rm and} D.~S. Fisher}, 2010 {The rate of
   fitness-valley crossing in sexual populations}. Genetics {\bf 186}:
   1389--1410.
+
+\bibitem[{Williams {\rm and} Pennings}(2019)]{williams2019drug}
+{Williams, K.-A. {\rm and} P.~S. Pennings}, 2019 Drug resistance evolution in
+  hiv in the late 1990s: hard sweeps, soft sweeps, clonal interference and the
+  accumulation of drug resistance mutations. BioRxiv p. 548198.
 
 \bibitem[{{Wolfram Research Inc.}}(2012)]{Mathematica}
 {{Wolfram Research Inc.}}, 2012 Mathematica, {V}ersion 9.0. Champaign, IL.
