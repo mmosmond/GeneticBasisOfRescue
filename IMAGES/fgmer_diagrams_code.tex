@@ -60,6 +60,11 @@
 \usepackage{lmodern}
 \usepackage{exscale}
 
+%match Helvetica text in manuscript
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault} 
+\usepackage[T1]{fontenc}
+
 \begin{document}
 
 \begin{textblock}{20}(0,9.75)
@@ -102,7 +107,7 @@
 %\node[draw,->] (A.south east) -- (B.north west);
 
 %two-step subcritical
-\node [rotate = 315] at (14, 14) {\Huge \textbf{2-step subcritical}, $\mathbf{\Lambda_2^{(-)}}$}; 
+\node [rotate = 315] at (14, 14) {\Huge \textbf{2-step subcritical}, $\bm{\Lambda_2^{(-)}}$}; 
 \coordinate (A1) at (12, 12);
 \coordinate (A2) at (13, 11);
 \coordinate (A3) at (11, 5);

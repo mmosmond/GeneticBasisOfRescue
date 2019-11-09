@@ -1,4 +1,4 @@
-\begin{thebibliography}{64}
+\begin{thebibliography}{65}
 
 \bibitem[{Abramowitz {\rm and} Stegun}(1972)]{Abramowitz1972}
 {Abramowitz, M. {\rm and} I.~A. Stegun}, editors, 1972 {\em Handbook of
@@ -181,6 +181,10 @@
   Miller}]{mao1997proliferation}
 {Mao, E.~F., L.~Lane, J.~Lee, {\rm and} J.~H. Miller}, 1997 Proliferation of
   mutators in a cell population. Journal of Bacteriology {\bf 179}: 417--422.
+
+\bibitem[{Martin}(2014)]{martin2014fisher}
+{Martin, G.}, 2014 Fisher's geometrical model emerges as a property of complex
+  integrated phenotypic networks. Genetics {\bf 197}: 237--255.
 
 \bibitem[{Martin {\em et~al.\/}}(2013){Martin, Aguilee, Ramsayer, Kaltz, {\rm
   and} Ronce}]{Martin2013}
