@@ -100,7 +100,7 @@ N0 = 10**4 #initial number of wildtype (positive integer)
 n = 4 #number of phenotype dimensions (positive integer)
 Es = 10**(-2) #mean fitness effect of a random mutation (positive real)
 l = 2 * Es / n #mutational variance (positive real)
-U = 2*10**(-4) #mutation probability (positive real)
+U = 2*10**(-3) #mutation probability (positive real)
 mmax = 0.5 #maximum malthusian growth rate (real)
 B = np.exp(mmax) #max expected number of gametes produced (positive real)
 mwts = [-0.1] #malthusian growth rate of wildtype (real) - list to loop over
@@ -108,7 +108,7 @@ mwts = [-0.1] #malthusian growth rate of wildtype (real) - list to loop over
 #meta-parameters
 rescue_N = 10**2 #number of individuals with positive growth rate needed to consider the population rescued (positive integer)
 maxgen = 10**6 #max gens just in case no rescue or extinction (shouldnt be needed)
-nReps = 10**2 #number of replicates (positive integer)
+nReps = 10**5 #number of replicates (positive integer)
 remove_lost = True #If true, remove mutations that are lost (0 for all individuals)
 
 ######################################################################
@@ -149,8 +149,12 @@ def main():
 					rescues = W > 1 #focus on potential rescue genotypes
 					ind = np.argmax(counts[rescues]) #choose most common as the rescue genotype
 					rescue_growth = np.log(W[rescues][ind]) #growth rate of rescue genotype
-					rescue_muts = np.sum(genos[rescues][ind]) - 1 #number of mutations in rescue genotype
-					write_data_to_output(fileHandles, [rescue_growth, rescue_muts])              
+					rescue_geno = genos[rescues][ind] #rescue genotype
+					rescue_muts = np.sum(rescue_geno) - 1 #number of mutations in rescue genotype
+					first_mut = mut[rescue_geno==1][1] #first mutation in rescue genotype
+					dist = np.sqrt(np.einsum('i,i->', first_mut - opt, first_mut - opt)) #euclidean distance of mutation to optimum
+					m_1 = np.log(B * np.exp(-0.5 * dist**2)) #growth rate of first mutation
+					write_data_to_output(fileHandles, [rescue_growth, rescue_muts, m_1])                  
 					break 
 
 				# fitness
@@ -183,3 +187,4 @@ start = time.time()
 main()
 end = time.time()
 print(end-start)
+

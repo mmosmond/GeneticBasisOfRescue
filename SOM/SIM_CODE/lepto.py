@@ -9,28 +9,28 @@ import csv
 ##HELPER FUNCTIONS##
 ######################################################################
 
-def make_output(N0, n, U, Es, mmax, mwt, nReps):
+def open_output_files(N0, n, U, Es, mmax, mwt, nReps):
 	"""
 	This function opens the output files and returns file
 	handles to each.
 	"""
 	sim_id = 'N%d_n%d_U%.5f_Es%.2f_mmax%.2f_mwt%.1f_nreps%d' %(N0, n, U, Es, mmax, mwt, nReps)
 	data_dir = 'data'
-	outfile = open("%s/dfe_lepto_%s.csv" %(data_dir,sim_id), 'a')
-	return outfile
+	outfile_A = open("%s/dfe_lepto_%s.csv" %(data_dir,sim_id),"w")
+	return outfile_A
 
-def append_data_to_output(outfile, data):
+def write_data_to_output(fileHandles, data):
 	"""
 	This function writes data to files
 	"""
-	writer = csv.writer(outfile)
+	writer = csv.writer(fileHandles)
 	writer.writerow(data)
 
-def close_output(outfile):
+def close_output_files(fileHandles):
 	"""
 	This function closes all output files.
 	"""
-	outfile.close()
+	fileHandles.close()
 
 def fitness(pop, mut, opt, B):
 	"""
@@ -99,10 +99,10 @@ N0 = 10**4 #initial number of wildtype (positive integer)
 n = 4 #number of phenotype dimensions (positive integer)
 Es = 10**(-2) #mean fitness effect of a random mutation (positive real)
 l = 2 * Es / n #mutational variance (positive real)
-U = 2*10**(-4) #mutation probability (positive real)
+U = 2*10**(-3) #mutation probability (positive real)
 mmax = 0.5 #maximum malthusian growth rate (real)
 B = np.exp(mmax) #max expected number of gametes produced (positive real)
-mwts = [-0.3, -0.2, -0.1] #malthusian growth rate of wildtype (real) - list to loop over
+mwts = [-0.2] #malthusian growth rate of wildtype (real) - list to loop over
 
 #meta-parameters
 rescue_N = 10**2 #number of individuals with positive growth rate needed to consider the population rescued (positive integer)
@@ -119,8 +119,8 @@ def main():
 	# loop over wildtype growth rates
 	for mwt in mwts:
 
-		# make output file
-		outfile = make_output(N0, n, U, Es, mmax, mwt, nReps) 
+		# open output file
+		fileHandles = open_output_files(N0, n, U, Es, mmax, mwt, nReps) 
 
 		rep = 1
 		while rep < nReps + 1:
@@ -148,8 +148,12 @@ def main():
 					rescues = W > 1 #focus on potential rescue genotypes
 					ind = np.argmax(counts[rescues]) #choose most common as the rescue genotype
 					rescue_growth = np.log(W[rescues][ind]) #growth rate of rescue genotype
-					rescue_muts = np.sum(genos[rescues][ind]) - 1 #number of mutations in rescue genotype
-					append_data_to_output(outfile, [rescue_growth, rescue_muts])              
+					rescue_geno = genos[rescues][ind] #rescue genotype
+					rescue_muts = np.sum(rescue_geno) - 1 #number of mutations in rescue genotype
+					first_mut = mut[rescue_geno==1][1] #first mutation in rescue genotype
+					dist = np.sqrt(np.einsum('i,i->', first_mut - opt, first_mut - opt)) #euclidean distance of mutation to optimum
+					m_1 = np.log(B * np.exp(-0.5 * dist**2)) #growth rate of first mutation
+					write_data_to_output(fileHandles, [rescue_growth, rescue_muts, m_1])              
 					break 
 
 				# fitness
@@ -170,8 +174,8 @@ def main():
 			# next replicate run
 			rep += 1
 
-		# cleanup
-		close_output(outfile)
+	# cleanup
+	close_output_files(fileHandles)
 
 ######################################################################
 ##RUNNING##
@@ -182,3 +186,4 @@ start = time.time()
 main()
 end = time.time()
 print(end-start)
+
