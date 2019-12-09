@@ -1,0 +1,202 @@
+\documentclass[a0,portrait]{a0poster}
+% You might find the 'draft' option to a0 poster useful if you have
+% lots of graphics, because they can take some time to process and
+% display. (\documentclass[a0,draft]{a0poster})
+
+% Switch off page numbers on a poster, obviously, and section numbers too.
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+
+% The textpos package is necessary to position textblocks at arbitary 
+% places on the page.
+\usepackage[absolute,overlay]{textpos}
+
+\usepackage{amsmath}
+\usepackage{bigints}
+\usepackage{bm}
+
+% Graphics to include graphics. Times is nice on posters, but you
+% might want to switch it off and go for CMR fonts.
+\usepackage{graphics,wrapfig}
+
+% These colours are tried and tested for titles and headers. Don't
+% over use color!
+%\usepackage{color}
+
+\usepackage{xcolor}
+%mathematica colors
+%\definecolor{col1}{rgb}{0.2420000000000014, 0.24, 0.6}
+%\definecolor{col2}{rgb}{0.6, 0.24, 0.4428931686004542}
+%\definecolor{col3}{rgb}{0.6, 0.5470136627990908, 0.24}
+%mathematica colors but a little brighter
+\definecolor{col1}{rgb}{0.34, 0.34, 0.7}
+\definecolor{col2}{rgb}{0.7, 0.34, 0.54}
+\definecolor{col3}{rgb}{0.7, 0.64, 0.34}
+
+% see documentation for a0poster class for the size options here
+\let\Textsize\normalsize
+
+\usepackage{epstopdf}
+\epstopdfsetup{outdir=./}
+
+\TPGrid[40mm,40mm]{20}{20}  % 10 - 1 - 10 Columns
+
+% Mess with these as you like
+\parindent=0pt
+%\parindent=1cm
+\parskip=1\baselineskip
+
+% abbreviations
+\newcommand{\ddd}{\,\mathrm{d}}
+
+%drawing pictures
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usetikzlibrary{matrix}
+\usetikzlibrary{arrows,shapes}
+\usetikzlibrary{calc}
+\usetikzlibrary{arrows.meta}
+
+\usepackage{lmodern}
+\usepackage{exscale}
+
+%match Helvetica text in manuscript
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault} 
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\begin{textblock}{20}(0,9.75)
+\begin{center}
+\begin{tikzpicture}[overlay]
+
+% Concentric circles
+\draw [black, line width = 3, loosely dotted, fill=black!20] (0,0) circle (11.5);
+\draw [black, line width = 10, fill = black!20] (0,0) circle (10);
+%\draw [black, line width = 3, loosely dotted, fill=black!50] (0,0) circle (8);
+\draw [black, line width = 3, loosely dotted, fill=white] (0,0) circle (8);
+%\node [] at (4.5, -3) {\VeryHuge$m>0$}; 
+\draw [col1, line width = 3, loosely dotted] (0,0) circle (17);
+%\draw [orange!20, line width = 5, loosely dotted] (0,0) circle (17);
+%\draw [red!20, line width = 5, loosely dotted] (0,0) circle (12);
+%\node [] at (12, -10) {\VeryHuge$m<0$}; 
+%\draw [red, line width = 3, loosely dotted, fill=red!10] (0,0) circle (12);
+
+% Draw the horizontal and vertical lines
+\draw [line width = 5] (-20,0) -- (20,0);
+\draw [line width = 5] (0,-20) -- (0,20);
+
+%one-step
+\node [rotate = 45] at (-14, 14) {\Huge \textbf{1-step}, $\mathbf{\Lambda_1}$}; 
+\coordinate (A1) at (-12, 12);
+\coordinate (A2) at (-11, 13);
+\coordinate (A3) at (-5, 11);
+\coordinate (B) at (-4.5, 4.5);
+%\draw[line width = 2] (A) -- (B);
+\path[font=\sffamily\Large\bfseries,-{Latex[width=1cm, length=1cm]}, line width=2, shorten >=1cm] (A1) edge node[anchor=east, xshift=-1cm] {} (B);
+%\path[font=\sffamily\Large\bfseries,-{Latex[width=1cm, length=1cm]}, line width=2, shorten >=1cm] (A2) edge node[anchor=east, xshift=-1cm] {} (B);
+%\path[font=\sffamily\Large\bfseries,-{Latex[width=1cm, length=1cm]}, line width=2, shorten >=1cm] (A3) edge node[anchor=east, xshift=-1cm] {} (B);
+\draw[fill=col1] (A1) circle (1cm);
+%\draw[fill=col3] (A2) circle (1cm);
+%\draw[fill=col3temp] (A3) circle (1cm);
+\draw[fill=col3] (B) circle (1cm);
+%\node[draw, circle, fill=red!50, font=\sffamily\Large\bfseries] at (A) {$a\vphantom{ab}$};
+%\node[draw, circle, fill=black!50, font=\sffamily\Large\bfseries] at (B) {$A\vphantom{AB}$};
+
+%\node[draw,->] (A.south east) -- (B.north west);
+
+%two-step subcritical
+\node [rotate = 315] at (14, 14) {\Huge \textbf{2-step subcritical}, $\bm{\Lambda_2^{(-)}}$}; 
+\coordinate (A1) at (12, 12);
+\coordinate (A2) at (13, 11);
+\coordinate (A3) at (11, 5);
+\coordinate (B) at (9, 10);
+\coordinate (C) at (4, 4);
+%\draw[line width = 2] (A) -- (B);
+%\draw[line width = 2] (B) -- (C);
+\path[font=\sffamily\Large\bfseries,-{Latex[width=1cm, length=1cm]}, line width=2, shorten >=1cm] (A1) edge node[anchor=east, yshift=1cm] {} (B);
+%\path[font=\sffamily\Large\bfseries,-{Latex[width=1cm, length=1cm]}, line width=2, shorten >=1cm] (A2) edge node[anchor=east, yshift=1cm] {} (B);
+%\path[font=\sffamily\Large\bfseries,-{Latex[width=1cm, length=1cm]}, line width=2, shorten >=1cm] (A3) edge node[anchor=east, yshift=1cm] {} (B);
+\path[font=\sffamily\Large\bfseries,-{Latex[width=1cm, length=1cm]}, line width=2, shorten >=1cm] (B) edge node[anchor=east,yshift=1cm] {} (C);
+\draw[fill=col1] (A1) circle (1cm);
+%\draw[fill=col3] (A2) circle (1cm);
+%\draw[fill=col3temp] (A3) circle (1cm);
+\draw[fill=col2] (B) circle (1cm);
+\draw[fill=col3] (C) circle (1cm);
+%\node[draw, circle, fill=red!50, font=\sffamily\Large\bfseries] at (A) {$ab$};
+%\node[draw, circle, fill=blue!50, font=\sffamily\Large\bfseries] at (B) {$Ab$};
+%\node[draw, circle, fill=black!50, font=\sffamily\Large\bfseries] at (C) {$AB$};
+
+%two-step critical
+\node [rotate=45] at (14, -14) {\Huge \textbf{2-step critical}, $\mathbf{\Lambda_2^{(0)}}$}; 
+\coordinate (A1) at (12, -12);
+\coordinate (A2) at (13, -11);
+\coordinate (A3) at (11, -5);
+\coordinate (B) at (7, -8);
+\coordinate (C) at (3.5, -4);
+%\draw[line width = 2] (A) -- (B);
+%\draw[line width = 2] (B) -- (C);
+\path[font=\sffamily\Large\bfseries,-{Latex[width=1cm, length=1cm]}, line width=2, shorten >=1cm] (A1) edge node[anchor=east, yshift=1cm] {} (B);
+%\path[font=\sffamily\Large\bfseries,-{Latex[width=1cm, length=1cm]}, line width=2, shorten >=1cm] (A2) edge node[anchor=east, yshift=1cm] {} (B);
+%\path[font=\sffamily\Large\bfseries,-{Latex[width=1cm, length=1cm]}, line width=2, shorten >=1cm] (A3) edge node[anchor=east, yshift=1cm] {} (B);
+\path[font=\sffamily\Large\bfseries,-{Latex[width=1cm, length=1cm]}, line width=2, shorten >=1cm] (B) edge node[anchor=east,yshift=1cm] {} (C);
+\draw[fill=col1] (A1) circle (1cm);
+%\draw[fill=col3] (A2) circle (1cm);
+%\draw[fill=col3temp] (A3) circle (1cm);
+\draw[fill=col2] (B) circle (1cm);
+\draw[fill=col3] (C) circle (1cm);
+
+%two-step supercritical
+\node [rotate=315] at (-14, -14) {\Huge \textbf{2-step supercritical}, $\mathbf{\Lambda_2^{(+)}}$}; 
+\coordinate (A1) at (-12, -12);
+\coordinate (A2) at (-13, -11);
+\coordinate (A3) at (-11, -5);
+\coordinate (B) at (-5, -4.25);
+\coordinate (C) at (-2, -2);
+%\draw[line width = 2] (A) -- (B);
+%\draw[line width = 2] (B) -- (C);
+\path[font=\sffamily\Large\bfseries,-{Latex[width=1cm, length=1cm]}, line width=2, shorten >=1cm] (A1) edge node[anchor=east, yshift=1cm] {} (B);
+%\path[font=\sffamily\Large\bfseries,-{Latex[width=1cm, length=1cm]}, line width=2, shorten >=1cm] (A2) edge node[anchor=east, yshift=1cm] {} (B);
+%\path[font=\sffamily\Large\bfseries,-{Latex[width=1cm, length=1cm]}, line width=2, shorten >=1cm] (A3) edge node[anchor=east, yshift=1cm] {} (B);
+\path[font=\sffamily\Large\bfseries,-{Latex[width=1cm, length=1cm]}, line width=2, shorten >=1cm] (B) edge node[anchor=east,yshift=1cm] {} (C);
+\draw[fill=col1] (A1) circle (1cm);
+%\draw[fill=col3] (A2) circle (1cm);
+%\draw[fill=col3temp] (A3) circle (1cm);
+\draw[fill=col2] (B) circle (1cm);
+\draw[fill=col3] (C) circle (1cm);
+
+
+%two-step recombination
+%\coordinate (A) at (14, -14);
+%\coordinate (B) at (14-2, -14+9);
+%\coordinate (C) at (14-8, -14+1);
+%\coordinate (D) at (14-2-8, -14+9+1);
+%%\draw[line width = 2] (A) -- (B);
+%%\draw[line width = 2] (A) -- (C);
+%%\draw[line width = 2] (B) -- (C);
+%%\draw[line width = 2] ($(B)!0.5!(C)$) -- (D);
+%%\draw[fill=red!50] (A) circle (1cm);
+%%\draw[fill=blue!50] (B) circle (1cm);
+%%\draw[fill=blue!50] (C) circle (1cm);
+%%\draw[fill=black!50] (D) circle (1cm);
+%\path[font=\sffamily\Large\bfseries,-{Latex[width=1cm, length=1cm]}, line width=2, shorten >=1cm] (A) edge node[anchor=east, yshift=1cm] {$$} (B);
+%\path[font=\sffamily\Large\bfseries,-{Latex[width=1cm, length=1cm]}, line width=2, shorten >=1cm] (A) edge node[anchor=north,yshift=0cm] {$$} (C);
+%\path[line width=2] (B) edge (C);
+%\path[-{Latex[width=1cm, length=1cm]}, line width=2, shorten >=1cm] ($(B)!0.5!(C)$) edge (D);
+%%\node[draw, circle, fill=red!50, font=\sffamily\Large\bfseries] at (A) {$ab$};
+%%\node[draw, circle, fill=blue!50, font=\sffamily\Large\bfseries] at (B) {$Ab$};
+%%\node[draw, circle, fill=blue!50, font=\sffamily\Large\bfseries] at (C) {$aB$};
+%%\node[draw, circle, fill=black!50, font=\sffamily\Large\bfseries] at (D) {$AB$};
+%\draw[fill=blue!50!black] (A) circle (1cm);
+%\draw[fill=gray!50] (B) circle (1cm);
+%\draw[fill=gray!50] (C) circle (1cm);
+%\draw[fill=black!50] (D) circle (1cm);
+
+\end{tikzpicture}
+\end{center}
+\end{textblock}
+
+
+\end{document}
+
